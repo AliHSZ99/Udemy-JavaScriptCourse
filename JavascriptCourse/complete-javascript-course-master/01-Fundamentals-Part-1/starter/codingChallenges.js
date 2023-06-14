@@ -83,7 +83,7 @@
 // }
 
 /////////////////////////////////////////////////////////////////
-// Coding Challenge #3
+// Coding Challenge #4
 const bill = 275;
 
 let tipPercentage = bill >= 50 && bill <= 300 ? 15 : 20;
