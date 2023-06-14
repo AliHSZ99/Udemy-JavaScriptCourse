@@ -137,3 +137,151 @@
 // let n = "1" + 1;
 // n = n - 1;
 // console.log(n);
+
+// /////////////////////////////////////////////////////////////////////
+// // TRUTHY AND FALSY VALUES
+// // 5 falsy values: 0, '', undefined, null, NaN
+
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean("Jonas"));
+// console.log(Boolean({}));
+// console.log(Boolean(""));
+
+// const money = 5;
+// if (money) {
+//   console.log("Don't spend it all ;)");
+// } else {
+//   console.log("You should get a job");
+// }
+
+// let height = 123;
+// if (height) {
+//   console.log("YAY! Height is defined");
+// } else {
+//   console.log("Height is UNDEFINED");
+// }
+
+// /////////////////////////////////////////////////////////////////////
+// // EQUALITY OPERATORS: == VS ===
+
+// const age = "18";
+// if (age === 18) console.log("You just became an adult :D (strict)");
+
+// // Usually avoid this one.
+// if (age == 18) console.log("You just became an adult :D (loose)");
+
+// const favourite = Number(prompt("What is your favourite number?"));
+// console.log(favourite);
+// console.log(typeof favourite);
+
+// if (favourite === 23) {
+//   console.log("Cool! 23 is an amazing number");
+// } else if (favourite === 7) {
+//   console.log('7 is also a cool number');
+// }  else if (favourite === 9) {
+//   console.log('9 is also a cool number');
+// } else {
+//   console.log('Number is not 23 or 7');
+// }
+
+// if (favourite !== 23) {
+//   console.log('why not 23?');
+// }
+
+// ///////////////////////////////////////////////////////////////////
+// BOOLEAN LOGIC
+// Theory
+
+// /////////////////////////////////////////////////////////////////////
+// // LOGICAL OPERATORS
+
+// const hasDriversLicense = true; // A
+// const hasGoodVision = true; // B
+
+// console.log(hasDriversLicense && hasGoodVision);
+// console.log(hasDriversLicense || hasGoodVision);
+// console.log(!hasDriversLicense);
+
+// const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// // if (shouldDrive) {
+// //   console.log("Sarah is able to drive!");
+// // } else {
+// //   console.log("Someone else should drive...");
+// // }
+
+// const isTired = false; // C
+// console.log(hasDriversLicense && hasGoodVision && isTired);
+
+// if (hasDriversLicense && hasGoodVision && !isTired) {
+//   console.log("Sarah is able to drive!");
+// } else {
+//   console.log("Someone else should drive...");
+// }
+
+// /////////////////////////////////////////////////////////////////////
+// // THE SWITCH STATEMENT
+// const day = "friday";
+
+// switch (day) {
+//   case "monday":
+//     console.log("Plan course structure");
+//     console.log("Go to coding meetup");
+//     break;
+//   case "tuesday":
+//     console.log("Prepare theory videos");
+//     break;
+//   case "wednesday":
+//   case "thursday":
+//     console.log("Write code examples");
+//     break;
+//   case "friday":
+//     console.log("Record videos");
+//     break;
+//   case "saturday":
+//   case "sunday":
+//     console.log("Enjoy the weekend :D");
+//     break;
+//   default:
+//     console.log("Not a valid day");
+//     break;
+// }
+
+// if (day === "monday") {
+//   console.log("Plan course structure");
+//   console.log("Go to coding meetup");
+// } else if (day === "tuesday") {
+//   console.log("Prepare theory videos");
+// } else if (day === "wednesday" || day === "thursday") {
+//   console.log("Write code examples");
+// } else if (day === "friday") {
+//   console.log("Record videos");
+// } else if (day === "saturday" || day === "sunday") {
+//   console.log("Enjoy the weekend :D");
+// } else {
+//   console.log("Not a valid day");
+// }
+
+/////////////////////////////////////////////////////////////////////
+// STATEMENTS AND EXPRESSIONS
+// Theory
+
+// /////////////////////////////////////////////////////////////////////
+// // THE CONDITIONAL (TERNARY) OPERATOR
+
+// const age = 15;
+// age >= 18 ? console.log("I can drink") : console.log("I can drink water");
+
+// const drink = age >= 18 ? "I can drink" : "I can drink water";
+// console.log(drink);
+
+// let drink2;
+// if (age >= 18) {
+//   drink2 = "I can drink";
+// } else {
+//   drink2 = "I can drink water";
+// }
+// console.log(drink2);
+
+// console.log(`I like to drink ${age >= 18 ? "wine" : "water"}`);
